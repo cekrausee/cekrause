@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 type LayoutProps = { children: ReactNode }
 
-const f = Source_Code_Pro({})
+const f = Source_Code_Pro({ subsets: ['latin'] })
 
 const Layout = ({ children }: LayoutProps) => (
   <html lang='en'>
