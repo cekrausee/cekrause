@@ -4,7 +4,7 @@ import { BackLink } from '@/components/ui/link/back'
 
 const Error = () => (
   <main className='flex min-h-svh items-center justify-center'>
-    <p className='text-xl'>
+    <p className='text-sm'>
       Unknown error. <BackLink />
     </p>
   </main>

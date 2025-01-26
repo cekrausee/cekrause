@@ -1,7 +1,7 @@
 import { StandardAnimation } from '@/components/ui/animation/standard'
 import { Analytics } from '@vercel/analytics/react'
-import { GeistMono } from 'geist/font/mono'
 import type { Metadata } from 'next'
+import { Source_Code_Pro } from 'next/font/google'
 import { ReactNode } from 'react'
 import './index.css'
 
@@ -12,9 +12,12 @@ export const metadata: Metadata = {
 
 type LayoutProps = { children: ReactNode }
 
+const f = Source_Code_Pro({})
+
 const Layout = ({ children }: LayoutProps) => (
   <html lang='en'>
-    <body className={GeistMono.className}>
+    <body className={f.className}>
+      {/* <body className={GeistMono.className}> */}
       <StandardAnimation>{children}</StandardAnimation>
       <Analytics />
     </body>
