@@ -60,7 +60,7 @@ const entries = Object.entries({
       href='vscode-keybindings'
       className='link'
     >
-      vscode-keybindings.json
+      vscode_keybindings.json
     </Link>,
     <Link
       key={'prettier-cfg'}
